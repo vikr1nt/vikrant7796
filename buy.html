@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+    <style>
+        body{
+           background-image: url(menback.jpeg);
+           background-size: cover;
+        }
+    .mp1{
+        display: grid;
+        justify-content: center;
+        color: rgb(116, 172, 44);
+        background-color: rgba(168, 156, 184, 0.404);
+        margin-top: 14%;
+        width: 10em;
+        height: 20em;
+        width: 350px;
+        margin-left: 40%;
+        padding: 50px;
+        
+    }
+    .company1{
+        background-color: rgba(0, 255, 255, 0.171);
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 1em;
+        color:white;
+    }
+    .v, .p{
+        padding: 3px;
+        margin: 5px;
+    }
+    .p{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="company1">F O O T O  F O O T W E A R</div>
+    <div class="mp1">
+        <div class="p">Payment</div>
+        <div class="v">Name : <br> <input type="text" id="name" required></div>
+        <div class="v">Address : <br><input type="text" id="address" required></div>
+        <div class="v">Mobile No. : <br><input type="number" id="mobile" required></div>
+
+        <div>
+            <a href="home.html">
+                <button id="codBtn" onclick="vikrant2()">Cash on Delivery</button>
+            </a> 
+            <br>
+            <div><b style="padding: 10px;">Payment Online</b><br>
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="UPI">UPI</option>
+                    <option value="PhonePay">Phone Pay</option>
+                    <option value="GPay">GPay</option>
+                    <option value="IPPB">IPPB App</option>                                                                                              
+                </select>
+                <button id="payBtn" onclick="vikrant()" disabled>Pay</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to check if all fields are filled
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const address = document.getElementById("address").value;
+            const mobile = document.getElementById("mobile").value;
+            const paymentMethod = document.getElementById("paymentMethod").value;
+            
+            // Enable the "Pay" button if all fields are filled and a payment method is selected
+            const payBtn = document.getElementById("payBtn");
+            if (name && address && mobile && paymentMethod) {
+                payBtn.disabled = false;
+            } else {
+                payBtn.disabled = true;
+            }
+        }
+
+        // Add event listeners to validate form whenever a user types something
+        document.getElementById("name").addEventListener("input", validateForm);
+        document.getElementById("address").addEventListener("input", validateForm);
+        document.getElementById("mobile").addEventListener("input", validateForm);
+        document.getElementById("paymentMethod").addEventListener("change", validateForm);
+
+        // Function to handle Cash on Delivery (COD)
+        function vikrant2(){
+            alert("Order is Placed");
+        }
+
+        // Function to handle Online Payment
+        function vikrant(){
+            alert("Payment Successful");
+            window.location.href = "ty.html";
+        }
+    </script>
+</body>
+</html>

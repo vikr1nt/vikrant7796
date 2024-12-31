@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website Project</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <p id="company">FOOTO FOOTWEAR</p>
+  <form class="mp" id="loginForm" onsubmit="return validateLogin(event)">
+    <table>
+      <thead><th colspan="2"><h1>Login</h1></th></thead>
+      <tr> 
+        <div class="email">
+          <td><b>E-mail : </b></td>
+          <td><input type="email" id="email" placeholder="abc@gmail.com" required></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="password">
+          <td><b>Password: </b></td>
+          <td><input type="password" id="password" required placeholder="Enter Password"></td>
+        </div>
+      </tr>
+      <tr>
+        <div>
+          <td colspan="2"><p class="fp" onclick="vikrant()"><a href="javascript:void(0)" style="color: black;">Forgot Password?</a></p></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="login">
+          <td colspan="2"><button type="submit">LOGIN</button></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="createacc">
+          <td colspan="2"><a href="createacc.html"><h2 style="color: black;">Create an account</h2></a></td>
+        </div>
+      </tr>
+    </table>
+  </form>
+
+  <script>
+    // Function to validate the login form
+    function validateLogin(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        // Getting values from the input fields
+        const username = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Get stored user data from localStorage using the entered email as the key
+        const storedUser = JSON.parse(localStorage.getItem(username));
+
+        // Check if both fields are filled
+        if (username === "" || password === "") {
+            alert("All fields are necessary");
+        } else {
+            // Validate if the entered data matches what's in localStorage
+            if (storedUser && storedUser.password === password) {
+                alert("Login Successful");
+                // Redirect to home page after successful login
+                window.location.href = "home.html"; // Redirect to home.html page
+            } else {
+                alert("Invalid Username or Password");
+            }
+        }
+    }
+
+    // Function to show the forgot password recovery message
+    function vikrant() {
+        alert("An email has been sent to your device. Please recover your PASSWORD.");
+    }
+  </script>
+</body>
+</html>

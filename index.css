@@ -1,0 +1,180 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: background-color 0.3s;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+/* Logo section */
+nav .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+nav .logo {
+    width: 200px;
+    margin: 0 15px;
+    max-width: 100%;
+}
+
+/* Product section */
+.product-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Individual product card styles */
+.product, .align {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Three items per row with gap between */
+    transition: transform 0.3s;
+}
+
+.product:hover, .align:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product Text */
+.product p, .align p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Women Footwear section - Adjust for layout */
+.womenfootwear {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.womenfootwear .align {
+    width: calc(33.33% - 20px); /* Three items per row with gap between */
+}
+
+/* Sports section - Adjust for layout */
+.sports {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.sports .align {
+    width: calc(33.33% - 20px); /* Three items per row with gap between */
+}
+
+/* Video Section */
+.videos-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.videos-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 45%; /* Video containers are 45% of the width */
+    margin: 10px 0;
+}
+
+video {
+    width: 100%; /* Make videos take up full container width */
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+    .product-section, .womenfootwear, .sports {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product, .align {
+        width: 80%;
+    }
+
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header a {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    .product p, .align p {
+        font-size: 1em;
+    }
+
+    .videos-section h2 {
+        font-size: 1.5em;
+    }
+}

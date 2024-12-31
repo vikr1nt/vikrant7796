@@ -1,0 +1,90 @@
+.logo{
+   width: 800px;
+   height: 800px;
+}
+body{
+      background-image: url(backhome.jpeg);
+      color: white;
+    
+      background-repeat:repeat;
+}
+ nav{  
+  background-image: url(homelogoback.jpeg);
+   animation: animate 1s linear forwards;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ @keyframes animate {
+   0%{
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+   }
+   100%{
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0px);
+   }
+ }
+ img{
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    width:800px;
+
+ }
+ header{
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(53, 12, 12, 0.815);
+    justify-content: center;
+ }
+.home , .review , .au , .offers , .signout , .cart {
+    margin: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color:aliceblue;
+    color: rgba(53, 12, 12, 0.815);
+    border-radius: 8px;
+
+}
+
+.men , .women , .bkid , .gkid{
+   width: 500px;
+   height: 510px;
+   padding: 35px;
+   background-color: aliceblue;  
+   animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+   0% , 100%{
+      transform: translateY(0);
+   }
+   50%{
+      transform: translateY(-20px);
+   }
+}
+
+.men , .bkid {
+   margin-left: 300px;
+}
+.women , .gkid{
+   margin-left:800px ;
+}
+
+
+.links{
+   display:grid;
+   grid-template-columns: 200px 200px ;
+   column-gap: 10px;
+   row-gap: 10px;
+}
+footer{
+   background-color: rgba(219, 38, 83, 0.904);
+   justify-content: center;
+   text-align: center;
+}

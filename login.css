@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+    background-image: url(loginback.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-items: center;
+}
+
+/* Company Title */
+#company {
+    letter-spacing: 2em;
+    font-size: 2em;
+    color: rgb(171, 204, 111);
+    background-color: rgba(53, 34, 34, 0.795);
+    padding: 20px;
+    padding-left: 400px;
+}
+
+/* Main Form Container */
+.mp {
+    display: grid;
+    justify-content: center;
+    color: rgb(34, 14, 14);
+    background-color: rgba(202, 206, 218, 0.76);
+    margin-top: 8%;
+    height: auto;
+    width: 350px;
+    margin-left: 10%;
+    padding: 50px;
+}
+
+/* Heading in the Form */
+h4 {
+    text-align: center;
+    color: rgb(32, 4, 4);
+}
+
+/* Email and Password Fields */
+.email, .password {
+    padding: 10px;
+}
+
+/* Forgot Password Style */
+.fp {
+    color: rgb(28, 34, 95);
+    color: rgb(114, 31, 117);
+}
+
+/* Login Button */
+.login {
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+/* Submit Button */
+button {
+    padding: 10px;
+    margin: 8px;
+    background: rgba(150, 22, 22, 0.603);
+    align-self: center;
+    justify-content: center;
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+/* Link Styling */
+a {
+    color: aliceblue;
+}
+
+/* Create Account Section */
+.createacc {
+    padding: 10px;
+    color: black;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+/* Small Screens (Mobile Devices) */
+@media only screen and (max-width: 600px) {
+
+    /* Adjust company name for smaller screens */
+    #company {
+        letter-spacing: 1em; /* Reduce letter spacing */
+        font-size: 1.5em;    /* Decrease font size */
+        padding-left: 0;     /* Center the company name */
+        text-align: center;  /* Center align the company name */
+    }
+
+    /* Main form container adjustments */
+    .mp {
+        width: 90%;          /* Form takes up 90% of the width on mobile */
+        margin-left: 5%;     /* Add small margin to center */
+        padding: 20px;       /* Reduce padding */
+    }
+
+    /* Adjust the form field size and button for mobile */
+    input {
+        padding: 12px;       /* Increase input padding for easier tap */
+    }
+
+    button {
+        padding: 12px;       /* Increase button padding for better accessibility */
+        font-size: 1em;      /* Slightly increase font size */
+    }
+
+    /* Forgot Password link adjustments */
+    .fp a {
+        font-size: 0.9em;    /* Decrease font size for mobile */
+        text-align: center;  /* Center align the link */
+    }
+
+    /* Adjust the Create Account section */
+    .createacc {
+        text-align: center;  /* Center the Create Account text */
+        font-size: 1.2em;    /* Decrease font size */
+        margin-top: 10px;    /* Add margin top */
+    }
+
+    /* Adjust input and button widths for smaller screens */
+    input, button {
+        width: 100%;          /* Make inputs and buttons take full width */
+        font-size: 1em;       /* Adjust font size */
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media only screen and (max-width: 768px) {
+
+    /* Main form container adjustments for tablets */
+    .mp {
+        width: 80%;          /* Slightly reduce form width */
+        margin-left: 10%;     /* Center form */
+    }
+
+    /* Adjust the company name size for medium screens */
+    #company {
+        font-size: 1.8em;    /* Decrease font size for tablets */
+        padding-left: 0;     /* Ensure the company name is centered */
+    }
+}

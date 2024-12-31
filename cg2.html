@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(menback5.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: animate 1s linear forwards;
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotateY(0deg);
+                filter: blur(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0px);
+            }
+        }
+
+        .sports {
+            display: flex;
+            flex-direction: row;
+            width: 2000px;
+            color: white;
+        }
+
+        .hvr:hover {
+            background-color: rgba(207, 178, 178, 0.274);
+        }
+
+        .company {
+            background-color: rgba(0, 255, 255, 0.171);
+            text-align: center;
+            font-size: 2em;
+            letter-spacing: 1em;
+        }
+
+        .cricket1,
+        .sports1,
+        .kabbadi1,
+        .football1,
+        .volleyball1,
+        .hockey1,
+        .running1 {
+            width: 200px;
+            height: 300px;
+            padding: 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 3px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cricket1:hover,
+        .sports1:hover,
+        .kabbadi1:hover,
+        .football1:hover,
+        .volleyball1:hover,
+        .hockey1:hover,
+        .running1:hover {
+            transform: scale(1.1);
+        }
+
+        .ss,
+        .cs,
+        .td {
+            text-align: center;
+            color: rgb(8, 2, 2);
+            font-size: 1em;
+            background-color: aliceblue;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            border: 2px solid red;
+        }
+
+        .align {
+            justify-items: center;
+            border-bottom: 5px;
+        }
+
+        img {
+            image-radius: 5px;
+        }
+
+        .align:hover {
+            background-color: rgba(0, 0, 0, 0.329);
+        }
+    </style>
+</head>
+<body aria-labelledby="home-heading">
+    <header class="company">VSGN FOOTWEAR : Men SECTION</header>
+    <div class="ss">SPORTS SHOES</div>
+    <div class="sports">
+        <div class="align">
+            <img src="rigidsports.jpeg" alt="" class="sports1">
+            <p>PRIZE : RS.999</p><br>
+            <button class="add-to-cart-btn" data-name="Rigid Sports" data-price="999">Add to Cart</button>
+            <a href="buy.html"><button>BUY</button></a>
+        </div>
+        <div class="align">
+            <img src="cricket.jpeg" alt="" class="cricket1"><br>
+            <p>PRIZE : RS.999</p><br>
+            <button class="add-to-cart-btn" data-name="Cricket Shoes" data-price="999">Add to Cart</button>
+            <a href="buy.html"><button>BUY</button></a>
+        </div>
+        <div class="align">
+            <img src="hockey.jpeg" alt="" class="hockey1"><br>
+            <p>PRIZE : RS.1999</p><br>
+            <button class="add-to-cart-btn" data-name="Hockey Shoes" data-price="1999">Add to Cart</button>
+            <a href="buy.html"><button>BUY</button></a>
+        </div>
+        <div class="align">
+            <img src="running.jpeg" alt="" class="running1"><br>
+            <p>PRIZE : RS.1499</p><br>
+            <button class="add-to-cart-btn" data-name="Running Shoes" data-price="1499">Add to Cart</button>
+            <a href="buy.html"><button>BUY</button></a>
+        </div>
+        <div class="align">
+            <img src="kabbadi.jpeg" alt="" class="kabbadi1"><br>
+            <p>PRIZE : RS.1299</p><br>
+            <button class="add-to-cart-btn" data-name="Kabbadi Shoes" data-price="1299">Add to Cart</button>
+            <a href="buy.html"><button>BUY</button></a>
+        </div>
+        <div class="align">
+            <img src="football.jpeg" alt="" class="football1"><br>
+            <p>PRIZE : RS.2999</p><br>
+            <button class="add-to-cart-btn" data-name="Football Shoes" data-price="2999">Add to Cart</button>
+            <a href="buy.html"><button>BUY</button></a>
+        </div>
+        <div class="align">
+            <img src="volleyball.jpeg" alt="" class="volleyball1"><br>
+            <p>PRIZE : RS.899</p><br>
+            <button class="add-to-cart-btn" data-name="Volleyball Shoes" data-price="899">Add to Cart</button>
+            <a href="buy.html"><button>BUY</button></a>
+        </div>
+    </div>
+    <div class="cs">CHAPPALS AND SANDALS </div> 
+<div class="sports" ><div class="align"><img src="rigidchappal.jpeg" alt="" class="sports1"><p>PRIZE : RS.499</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html" ><button>BUY</button></a></div>
+  <div class="align"><img src="chappal2.jpeg" alt="" class="hockey1"><br><p>PRIZE : RS 1299</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+  <div class="align"><img src="chappal3.jpeg" alt="" class="running1"><br><p>PRIZE : RS.999</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+  <div class="align"><img src="sandels1.jpeg" alt="" class="kabbadi1"><br><p>PRIZE : RS.449</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+  <div class="align"><img src="sandels2.jpeg" alt="" class="football1"><br><p>PRIZE : RS.789</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+  <div class="align"><img src="sandels3.jpeg" alt="" class="volleyball1"><br><p>PRIZE : RS.899</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+  <div class="align"><img src="sandel4.jpeg" alt="" class="cricket1"><br><p>PRIZE : RS.669</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+      </div>
+      <div class="td">TRADITIONAL FOOTWEAR </div>  <div class="sports" >
+        <div class="align"><img src="rigidtfootwear.jpeg" alt="" class="sports1"> <p>PRIZE : RS.2049</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html" ><button>BUY</button></a></div>
+        <div class="align"><img src="tfootwear1.jpeg" alt="" class="cricket1" ><br><p>PRIZE : RS.2099</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+        <div class="align"><img src="tfootwear2.jpeg" alt="" class="hockey1"> <br><p>PRIZE : RS.1999</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+        <div class="align"> <img src="tfootwear3.jpeg" alt="" class="running1"><br><p>PRIZE : RS.1899</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+        <div class="align"><img src="tfootwear4.jpeg" alt="" class="kabbadi1"><br><p>PRIZE : RS.1699</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+        <div class="align"><img src="tfootwear5.jpeg" alt="" class="football1"><br><p>PRIZE : RS.1299</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+        <div class="align"><img src="tfootwear6.jpeg" alt="" class="volleyball1"><br><p>PRIZE : RS.1999</p><br><a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a><a href="buy.html"><button>BUY</button></a></div>
+      </div> 
+
+    <!-- Repeat the above for other sections -->
+
+    <script>
+        // Function to handle adding products to the cart
+const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const productName = this.getAttribute('data-name');
+        const productPrice = this.getAttribute('data-price');
+
+        // Create a product object
+        const product = {
+            name: productName,
+            price: parseFloat(productPrice),
+            quantity: 1
+        };
+
+        // Get the cart from localStorage or initialize an empty array
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Check if the product already exists in the cart
+        const existingProductIndex = cart.findIndex(item => item.name === productName);
+
+        if (existingProductIndex !== -1) {
+            // If the product already exists, increase its quantity
+            cart[existingProductIndex].quantity += 1;
+        } else {
+            // If the product doesn't exist, add it to the cart
+            cart.push(product);
+        }
+
+        // Save the updated cart back to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        alert(`${productName} added to the cart!`);
+    });
+});
+
+    </script>
+</body>
+</html>
